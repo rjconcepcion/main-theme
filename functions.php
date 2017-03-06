@@ -24,6 +24,17 @@ function THEME_NAME_setup(){
 		"main" => "The main menu of the website"
 	]);
 
+	/**
+	 * LIST OF DEFAULT URLS
+	 */
+	define( HOME,	get_bloginfo("url") ); //home url
+
+	define( ASSET,	get_bloginfo("template_url")."/asset/" ); //asset folder in theme
+
+	define( IMAGES,	get_bloginfo("template_url")."/asset/image/" ); //image folder inside asset folder
+
+	define( HELPER,	get_bloginfo("template_url")."/asset/helper/" ); //helper folder inside asset folder	
+
 }
 add_action( 'after_setup_theme', 'THEME_NAME_setup' );
 
@@ -83,9 +94,9 @@ function THEME_NAME_styles_n_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'THEME_NAME_styles_n_scripts' );
 
+
 /**
  * Custom post types.
- *
  */
 require get_template_directory() . '/inc/custom-post-types.php';
 
@@ -94,3 +105,13 @@ require get_template_directory() . '/inc/custom-post-types.php';
  * !! ACF PLUGIN REQUIRED
  */
 //require get_template_directory() . '/inc/acf.php';
+
+/**
+ * FILTERS
+ */
+require get_template_directory() . '/inc/filters.php';
+
+/**
+ * Images sizes
+ */
+require get_template_directory() . '/inc/image-size.php';
