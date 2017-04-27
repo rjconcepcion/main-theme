@@ -8,6 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<header>
+	head
 		<?php
 
 		/**
