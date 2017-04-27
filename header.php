@@ -20,7 +20,10 @@
 				$default_banner = get_bloginfo("template_url")."/asset/image/default-banner.png";
 
 				if( is_page() ):
-
+					/**
+					 * get_field function is dependent in ACF plugin
+					 * remove this function if you dont have acf pro
+					 */
 					$acf_title = get_field( $query_obj->post_name."_title", "option" );
 					$acf_banner = get_field( $query_obj->post_name."_banner", "option" );
 					$title = $acf_title ? $acf_title : $query_obj->post_title;
