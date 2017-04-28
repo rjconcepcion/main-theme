@@ -1,9 +1,9 @@
 /*
 Theme Name: THEME_NAME
-Theme URI: http://www.iconcept.com.ph/
-Author: iConcept Global Advertising Inc.
-Author URI: http://www.iconcept.com.ph/
-Description: This is THEME_NAME theme developed and design by iConcept Global Advertising Inc. and approved by the clients needs and wants.
+Theme URI: 
+Author: ChunkyChunks
+Author URI: 
+Description: theme developed and design by ChunkyChunks
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -34,15 +34,38 @@ div {
 h2{
 
 }
+a {
+	text-decoration: none !important;
+}
+
+/**
+ * WORDPRESS DEFAULT CLASSES
+ */
+.alignleft {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.alignright {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/**
+ * DEFINE CLASSES
+ */
 ul.rst {
 	padding: 0;
 	margin-bottom: 0;
 }
 ul.li{
 	list-style: none;
-}
-a {
-	text-decoration: none !important;
 }
 .tbr{
 	display: table;
