@@ -1,2 +1,0 @@
-<?php 
-// Hide and seek.
