@@ -26,7 +26,7 @@ if(!function_exists("theme_setup")):
 		define( 'HELPERS',	get_bloginfo("template_url")."/assets/helpers/" ); //helper folder inside asset folder	
 
 		/* Image sizes */
-		//require get_template_directory() . '/inc/image-size.php';
+		require 'image-size.php';
 	}
 	add_action( 'after_setup_theme', 'theme_setup' );
 
