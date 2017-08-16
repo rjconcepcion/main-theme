@@ -1,0 +1,16 @@
+/**
+ * Login form in backend /wp-admin
+ */
+#login {
+	width: 350px;
+	padding-top: 30px;
+}
+body.login div#login form#loginform input#user_login,
+body.login div#login form#loginform input#user_pass {
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px rgba(247, 247, 247, 0.78);
+}
+body.login div#login form#loginform .g-recaptcha {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}

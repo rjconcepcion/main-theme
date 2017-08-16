@@ -8,7 +8,7 @@
 </header>
 
 <main>
-	body
+	# BODY
 </main>
 
 <?php get_footer(); ?>
