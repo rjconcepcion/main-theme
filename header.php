@@ -8,7 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<header>
-	head
+
 		<?php
 
 		/**
@@ -17,17 +17,10 @@
 			if(!is_home()):
 
 				$query_obj = get_queried_object();	
-				$default_banner = get_bloginfo("template_url")."/asset/image/default-banner.png";
 
 				if( is_page() ):
-					/**
-					 * get_field function is dependent in ACF plugin
-					 * remove this function if you dont have acf pro
-					 */
-					$acf_title = get_field( $query_obj->post_name."_title", "option" );
-					$acf_banner = get_field( $query_obj->post_name."_banner", "option" );
-					$title = $acf_title ? $acf_title : $query_obj->post_title;
-					$banner = $acf_banner ? $acf_banner : $default_banner;
+
+
 				
 				endif;
 		
@@ -37,9 +30,7 @@
 			</div> <!-- #sb-pg-bnnr -->	
 	</header>
 		<?php
-
 			endif;	/* [END] if(!is_home()): */
-		
 		?>		
 	<!-- </header> @ content -->
 	

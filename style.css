@@ -64,7 +64,7 @@ ul.rst {
 	padding: 0;
 	margin-bottom: 0;
 }
-ul.li{
+ul.rst li{
 	list-style: none;
 }
 .tbr{
@@ -81,21 +81,4 @@ ul.li{
 	-moz-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;	
-}
-.fff {
-	color: #FFF;
-}
-.x-pad-left {
-	padding-left: 0;
-}
-
-.x-pad-right {
-	padding-right: 0;
-}
-.inline-block {
-	display: inline-block;
-}
-.margin-lr-auto{
-	margin-left: auto;
-	margin-right: auto;
 }

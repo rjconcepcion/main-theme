@@ -5,7 +5,6 @@
 
 		<!-- end	homepage slider -->
 	</div> <!-- .bnnr-wrp -->
-
 </header>
 
 <main>
