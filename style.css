@@ -1,26 +1,20 @@
 /*
 Theme Name: THEME_NAME
 Theme URI: 
-Author: ChunkyChunks
-Author URI: 
-Description: theme developed and design by ChunkyChunks
-Version: 1.0
+Author: IConcept #119
+Author URI: https://github.com/robert-john-concepcion
+Description: Theme developed by awsome people!
+Version: 01
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/**
- * Google font
- */
+/* Google font */
 
-
-/**
- * DEFAULT CSS
- */
+/* Reset default css */
 a,
 p,
 h1,
@@ -28,7 +22,8 @@ h2,
 h3,
 h4,
 h5,
-div {
+div,
+span {
 
 }
 h2{
@@ -37,29 +32,39 @@ h2{
 a {
 	text-decoration: none !important;
 }
-
-/**
- * WORDPRESS DEFAULT CLASSES
- */
-.alignleft {
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 10px;
-}
-.alignright {
-    float: right;
-    margin-left: 30px;
-    margin-bottom: 10px;
-}
-.aligncenter {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+input,
+button,
+textarea {
+	outline: none;
 }
 
-/**
- * DEFINE CLASSES
- */
+/* Usefull classes */
+.nomar-top {
+    margin-top: 0;
+}
+.nomar-left {
+    margin-left: 0;
+}
+.nomar-right {
+    margin-right: 0;
+}
+.nomar-bottom {
+    margin-bottom: 0;
+}
+
+.nopad-top {
+    padding-top: 0;
+}
+.nopad-left {
+    padding-left: 0;
+}
+.nopad-right {
+    padding-right: 0;
+}
+.nopad-bottom {
+    padding-bottom: 0;
+}
+
 ul.rst {
 	padding: 0;
 	margin-bottom: 0;
@@ -81,4 +86,23 @@ ul.rst li{
 	-moz-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;	
+}
+
+/**
+ * WORDPRESS DEFAULT CLASSES
+ */
+.alignleft {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.alignright {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
