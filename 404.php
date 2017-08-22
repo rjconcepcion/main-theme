@@ -2,17 +2,9 @@
 	<main>
 		<div class="container">
 			<div class="row">
-				<?php 
-					if(have_posts()):
-						while(have_posts()): the_post(); 
-				?>
 				<div class="col-md-12">
-					<?php the_content(); ?>
-				</div> <!-- .col-md-12 -->
-				<?php	
-						endwhile;
-					endif;
-				?>
+					<h2>404 PAGE NOT FOUND</h2>
+				</div>
 				<div class="clearfix"></div>
 			</div> <!-- .row -->
 		</div> <!-- .container -->

@@ -1,22 +1,15 @@
 <?php
 
 if(!function_exists("theme_setup")):
-
 	/**
 	 * Theme basic setup
 	 */
 	function theme_setup(){
 
-		/* WOOCOMMERCE */
-		add_theme_support( 'woocommerce' );
-
-		/* Remove admin menu by default */
+		show_admin_bar( false );
+		//add_theme_support( 'woocommerce' );
 		add_theme_support( 'title-tag' );
-
-		/* Remove admin menu by default */
-		show_admin_bar( false );	
-
-		/* Add menu feature in apperance */	
+		add_theme_support( 'post-thumbnails' );
 		register_nav_menus(array("main" => "The main menu of the website"));
 
 		/* LIST OF DEFAULT URLS */
@@ -29,5 +22,4 @@ if(!function_exists("theme_setup")):
 		require 'image-size.php';
 	}
 	add_action( 'after_setup_theme', 'theme_setup' );
-
 endif;

@@ -18,7 +18,7 @@ require 'inc/custom-post-types.php';
 /**
  * FILTERS
  */
-require 'inc/filters.php';
+require 'inc/hooks.php';
 
 /**
  * BACK END CAPTCHA
@@ -31,10 +31,25 @@ require 'inc/captcha.php';
 require 'inc/backend-modifier.php';
 
 /**
- * ACF functions
- * !! ACF PLUGIN REQUIRED
+ * Hooked pre_get_posts
  */
-//require '/inc/acf.php';
-//
+require 'inc/pre-get-posts.php';
+
+/**
+ * REWRITE RULES
+ * rewrite url
+ */
+//require 'inc/rewrites.php';
+
+/**
+ * ACF functions
+ * ACF PLUGIN REQUIRED
+ */
+//require 'inc/acf.php';
+
+/**
+ * BACK END CAPTCHA
+ */
+require 'inc/functions.php';
 
 

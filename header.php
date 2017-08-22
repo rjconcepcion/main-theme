@@ -10,7 +10,6 @@
 	<header>
 		# HEAD
 		<?php
-
 		/**
 		 * SUBPAGE BANNER
 		 */
@@ -19,11 +18,8 @@
 				$query_obj = get_queried_object();	
 
 				if( is_page() ):
-
-
 				
 				endif;
-		
 		?>
 			<div id="sb-pg-bnnr">
 
@@ -31,8 +27,7 @@
 	</header>
 		<?php
 			endif;	/* [END] if(!is_home()): */
-		?>		
-	<!-- </header> @ content -->
+		?>
 	
 
 

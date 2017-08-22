@@ -33,7 +33,7 @@
 					
 					</div>
 				
-				<?php endif; ?>
+				<?php endif; //have_posts(); ?>
 
 				<div class="clearfix"></div>
 			</div> <!-- .row -->

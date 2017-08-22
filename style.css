@@ -26,14 +26,12 @@ div,
 span {
 
 }
-h2{
-
-}
 a {
 	text-decoration: none !important;
 }
 input,
 button,
+select,
 textarea {
 	outline: none;
 }
