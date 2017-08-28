@@ -25,6 +25,7 @@ if(!function_exists('theme_scripts_style')):
 		
 		/*  Main js */
 		wp_enqueue_script(	'theme',		ASSETS . 'js/main.js',  array(), true, true );
+		wp_localize_script(	'theme', 'o', array('homeurl'=>get_bloginfo('url')) );
 	}
 	add_action( 'wp_enqueue_scripts', 'theme_scripts_style' );
 
