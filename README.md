@@ -8,6 +8,7 @@ Simple and clean bootstrap base wordpress theme.
 * [x] fix 404 message for seo purpose
 * [x] add new CSS classes
 * [x] localize in enqeue
+* [x] template directory
 
 ## Changelog
 * [x] Google Captcha in admin backend.
