@@ -1,8 +1,15 @@
-# WP-base-theme
+# MAIN THEME
 ```
-Simple and clean wordpress theme
+Simple and clean bootstrap base wordpress theme.
 ```
-## Changelog 11.16.17
+## Changelog
+* [x] add php file for shortcode functions
+* [x] add php file for ajax response
+* [x] fix 404 message for seo purpose
+* [x] add new CSS classes
+* [x] localize in enqeue
+
+## Changelog
 * [x] Google Captcha in admin backend.
 * [x] Removing WP Version in view source code and admin footer.
 * [x] Removing WP developer in admin footer
