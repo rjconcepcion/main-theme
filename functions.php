@@ -36,6 +36,11 @@ require 'inc/backend-modifier.php';
 require 'inc/pre-get-posts.php';
 
 /**
+ * Hooked add_shortcode
+ */
+require 'inc/add-shortcode.php';
+
+/**
  * REWRITE RULES
  * rewrite url
  */
