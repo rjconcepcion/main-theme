@@ -53,8 +53,11 @@ require 'inc/add-shortcode.php';
 //require 'inc/acf.php';
 
 /**
+ * AJAX RESPONSE FUNCTIONS
+ */
+//require 'inc/ajax-response.php';
+
+/**
  * BACK END CAPTCHA
  */
 require 'inc/functions.php';
-
-
