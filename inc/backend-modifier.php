@@ -26,16 +26,6 @@ if(!function_exists("site_version_remove")):
 	add_filter('the_generator', 'site_version_remove');
 endif;
 
-if(!function_exists("backend_footer_version")):
-	/**
-	 * REMOVE WP VERSION IN ADMIN FOOTER
-	 */
-	function backend_footer_version() {
-	    remove_filter( 'update_footer', 'core_update_footer' ); 
-	}
-	add_action( 'admin_menu', 'backend_footer_version' );
-endif;
-
 if(!function_exists("remove_wp_logo_admin_bar")):
 	/**
 	 * REMOVE WP LOGO IN ADMIN BAR
@@ -45,4 +35,27 @@ if(!function_exists("remove_wp_logo_admin_bar")):
 	        $wp_admin_bar->remove_menu('wp-logo');
 	}
 	add_action('wp_before_admin_bar_render', 'remove_wp_logo_admin_bar', 0);
+endif;
+
+if(!function_exists("version_remover_style_script")):
+	/**
+	 * REMOVE WP VERSION IN EXTERNAL FILES
+	 */
+	function version_remover_style_script( $src ) {
+	    if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) )
+	        $src = remove_query_arg( 'ver', $src );
+	    return $src;
+	}
+	add_filter( 'style_loader_src', 'version_remover_style_script', 9999 );
+	add_filter( 'script_loader_src', 'version_remover_style_script', 9999 );
+endif;
+
+if(!function_exists("backend_footer_version")):
+	/**
+	 * REMOVE WP VERSION IN ADMIN FOOTER
+	 */
+	function backend_footer_version() {
+	    remove_filter( 'update_footer', 'core_update_footer' ); 
+	}
+	add_action( 'admin_menu', 'backend_footer_version' );
 endif;
