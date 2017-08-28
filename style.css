@@ -1,5 +1,5 @@
 /*
-Theme Name: THEME_NAME
+Theme Name: MAIN THEME
 Theme URI:
 Author: IConcept #119
 Author URI: https://github.com/robert-john-concepcion
@@ -37,6 +37,9 @@ textarea {
 }
 
 /* Usefull classes */
+.nomar {
+    margin: 0;
+}
 .nomar-top {
     margin-top: 0;
 }
@@ -50,6 +53,9 @@ textarea {
     margin-bottom: 0;
 }
 
+.nopad {
+    padding: 0;
+}
 .nopad-top {
     padding-top: 0;
 }
@@ -70,7 +76,14 @@ ul.rst {
 ul.rst li{
 	list-style: none;
 }
-.tbr{
+.fllr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.tbr {
 	display: table;
 	width: 100%;
 	height: 100%;
