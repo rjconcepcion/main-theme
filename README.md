@@ -3,6 +3,8 @@
 Simple and clean bootstrap base wordpress theme.
 ```
 ## Changelog
+* [x] remove wp version in external files
+* [x] remove wp version in admin footer
 * [x] add php file for shortcode functions
 * [x] add php file for ajax response
 * [x] fix 404 message for seo purpose
